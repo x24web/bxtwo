@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page Title -->
+    <title>Bxtwo - Creative Agency HTML Template</title>
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <!-- ======= Bootstrap CSS ======= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- ======= Owl Carousel CSS ======= -->
+    <link rel="stylesheet" href="assets/css/plugins/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/OwlCarousel/owl.theme.default.min.css">
+
+    <!-- ======= Simple Light Box CSS ======= -->
+    <link rel="stylesheet" href="assets/css/plugins/LightBox/simplelightbox.min.css">
+
+    <!-- ======= Main Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ======= Custom Stylesheet ======= -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+  </head>
+  <body>
+    <!-- =========== Preloader Start ============ -->
+    <div class="preloader">
+      <div class="preloader--wapper">
+        <svg class="preloader--content" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></feColorMatrix>
+            </filter>
+        </defs>
+          <g filter="url(#goo)">
+            <circle class="dot " cx="50" cy="50" r="25"></circle>
+            <circle class="dot" cx="50" cy="50" r="25" ></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- =========== Preloader End ============ -->
+    <!-- Start NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.png" class="logo-navbar" alt="logo">
+          <img src="assets/img/logo-fixed.png" class="logo-fixed" alt="logo">
+        </a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link menu-btn" href="#">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+    <!-- Start Page Header -->
+    <div class="page-header-section">
+      <div class="container">
+        <h1 class="page-title">Contact <span>Us</span></h1>
+        <ul class="page-nav">
+          <li><a href="index.html">Home - </a></li>
+          <li class="active">Contact Us</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Page Header -->
+    <!-- Start contact section -->
+    <section class="contact-section py-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 section-title">
+            <h2>Tell us about your Project ideas or<span>Just say hello.</span></h2>
+          </div>
+        </div>
+        <form class="row contact-form-wrap" id="contact-form" action="sendmail.php">
+          <div class="col-md-8 mx-auto">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <input name="name" id="name" class="form-control" type="text" placeholder="Name*" onfocus="this.placeholder=''" onblur="this.placeholder='Name*'"/>
+              </div>
+              <div class="col-md-6 mb-4">
+                <input name="mail" id="mail" class="form-control" type="email" placeholder="E-mail*" onfocus="this.placeholder=''" onblur="this.placeholder='Email*'"/>
+              </div>
+              <div class="col-md-12">
+                <textarea name="messege" id="messege" class="form-control" rows="8" placeholder="Message" onfocus="this.placeholder=''" onblur="this.placeholder='Message*'"></textarea>
+              </div>
+              <input type="submit" class="btn-style btn-one mx-auto mt-4" value="Send Message" id="submit-message"/>
+            </div>
+          </div>
+        </form>
+        <div class="row information mt-5">
+          <div class="col-md-4">
+            <div class="single-address">
+              <h4>Working Hours</h4>
+              <p>
+                (Mon to Sat): 10.00 AM to 07.00 PM <br />
+                (Sunday): Holiday
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-address">
+              <h4>Office Address</h4>
+              <p>
+                14 New Digital Street, 25 North, <br />
+                Sydney, Australia-1
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-address">
+              <h4>Contact Details</h4>
+              <p>
+                Phone : <a href="tel:+(61)1234567890">+(61) 123 456 7890</a>
+                <br />
+                Support:
+                <a href="mailto:example@domain.com">Example@domain.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End contact section -->
+    <!-- Start Footer Block -->
+    <footer class="bg-gray">
+      <div class="container">
+        <div class="row py-100">
+          <div class="col-md-4">
+            <div class="footer-left">
+              <img src="assets/img/logo-footer.png" alt="logo-footer"/>
+              <p>Activate one page navigation on any page throughout your with the selection one simple option in the admin area.</p>
+              <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-center">
+              <h4 class="footer-title">Who can help!</h4>
+              <ul>
+                <li><a href="#">Price &amp; Planning</a></li>
+                <li><a href="#">Privacy &amp; Condation</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-right">
+              <h4 class="footer-title">Subscribe To Our Newsletter</h4>
+              <p>There spok happy or you are out effect desire way design
+                sentiments.</p>
+              <form class="input-widget" action="" method="">
+                <div class="input-group">
+                  <input class="form-control" placeholder="Enter Your Email" type="text" required="">
+                  <div class="input-group-append">
+                    <button class="form-btn-style" type="submit">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="copyright text-center">© Copyright Bxtwo 2019 | All right reserved</p>
+      </div>
+    </footer>
+    <!-- End Footer Block -->
+    <!-- Start Scroll Top -->
+    <div class="scroll-top">
+      <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End Scroll Top -->
+    <!-- ///// JS FILES \\\\\-->
+    <!-- ======= jQuery Library ======= -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+   
+    <!-- ======= Popper Js ======= -->
+    <script src="assets/js/plugins/popper.min.js"></script>
+
+    <!-- ======= Bootstrap Js ======= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- ======= Owl Carousel JS ======= -->
+    <script src="assets/js/plugins/owl.carousel.min.js"></script>
+
+    <!-- ======= Simple Lightbox JS ======= -->
+    <script src="assets/js/plugins/simple-lightbox.min.js"></script>
+
+    <!-- ======= Main JS ======= -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- ======= Custom JS ======= -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
