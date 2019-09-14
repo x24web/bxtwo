@@ -1,3 +1,17 @@
+// =======  Variables & Mixins  ======= //
+$primary-font:'Quicksand', sans-serif;
+$primary-color:#2c57e4;
+$bg-color: #f9fbfe;
+@mixin trans($x) {
+  -webkit-transition: all $x+s ease 0s;
+  -moz-transition: all $x+s ease 0s;
+  -o-transition: all $x+s ease 0s;
+  transition: all $x+s ease 0s;
+}
+@mixin shadowbox($x){
+  -wekit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, $x);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, $x);
+}
 /*==========[index]==========
 01 - Global
 02 - Navbar
@@ -23,20 +37,6 @@ NOTE:
 Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
 We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
 ===========================*/
-$primary-font:'Quicksand', sans-serif;
-$primary-color:#2c57e4;
-$bg-color: #f9fbfe;
-@mixin trans($x) {
-  -webkit-transition: all $x+s ease 0s;
-  -moz-transition: all $x+s ease 0s;
-  -o-transition: all $x+s ease 0s;
-  transition: all $x+s ease 0s;
-}
-@mixin shadowbox($x){
-  -wekit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, $x);
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, $x);
-}
-
 /*========== [01 - Start Global] ==========*/
 body {
   font-family: $primary-font;

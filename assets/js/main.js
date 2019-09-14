@@ -1,22 +1,41 @@
+/*==========[index]==========
+01 - VARIABLES
+02 - Preloader
+03 - Navbar
+04 - Back To Up 
+05 - Typed js
+06 - OwlCarousel Logo Section
+07 - OwlCarousel Service Section 
+08 - OwlCarousel testimonial Section
+09 - Animate Back To Up
+
+NOTE:
+------
+Please DO NOT EDIT THIS JS, you may need to use "custom.js" file for writing your custom js.
+We may release future updates so it will overwrite this file. it's better and safer to use "custom.js".
+===========================*/
+
+// 01 - VARIABLES
 var Nav                 = $(".navbar-light"),
     $document           = $(document),
     $window             = $(window),
     scrollUp            = 0;
 
 $(window).on('load', function () {
+    // 02 - Preloader
     $(".preloader").delay(700).fadeOut(600, function () {
         $(this).remove();
     });
 });
 $(window).on('scroll', function () {
     "use strict";
-    // Nav Fixed on Scroll
+    // 03 - Nav Fixed on Scroll
     if ($window.scrollTop() > 75) {
         Nav.addClass("nav-scroll");
     } else {
         Nav.removeClass("nav-scroll");
     }
-    // hidden Navbar with scroll
+    // 03 - hidden Navbar with scroll
     var scrollDown = $window.scrollTop();
     
     if (scrollDown > scrollUp) {
@@ -26,7 +45,7 @@ $(window).on('scroll', function () {
     }
     scrollUp = scrollDown;
 
-    // 09 - Back To Up
+    // 04 - Back To Up
     if ($(window).scrollTop() < 400) {
         $('.scroll-top').removeClass('active');
     } else {
@@ -35,6 +54,7 @@ $(window).on('scroll', function () {
 });
 $(function () {
     "use strict";
+    // 03 - color navbar on mobile
     $('.navbar-toggler').click(function(){
         if(!$('.navbar-light').hasClass('nav-scroll')){
             $('.navbar-light').addClass('nav-scroll');
@@ -42,6 +62,8 @@ $(function () {
             $('.navbar-light').removeClass('nav-scroll');            
         }
     });
+
+    // 05 - Typed js
     if(document.getElementById('typed')){
         var typed = new Typed("#typed", {
             stringsElement: '#typed-string',
@@ -53,7 +75,7 @@ $(function () {
             loop: true,
         });
     }
-
+    // 06 - OwlCarousel Logo Section
     $('.brand-logo-carousel').owlCarousel({
         loop:true,
         autoplay:true,
@@ -71,7 +93,7 @@ $(function () {
             }
         }
     })
-    
+    // 07 - OwlCarousel Service Section    
     $('.service-content.owl-carousel').owlCarousel({
         loop:true,
         autoplay:true,
@@ -86,8 +108,8 @@ $(function () {
             }
         }
     })
-    
-    
+
+    // 08 - OwlCarousel testimonial Section
     $('.testimonial-content').owlCarousel({
         loop:true,
         margin:10,
@@ -102,7 +124,7 @@ $(function () {
         }
     })
 
-    // 09 - Back To Up
+    // 09 - Animate Back To Up
     $('.scroll-top').on("click", function () {
         $("html, body").animate({
             scrollTop: 0
